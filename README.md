@@ -18,7 +18,7 @@ NOTE: replace __`blog`__ and __`Post`__ with your own names.
 ### Feature Tasks and Requirements
 *NOTE: replace __`blog`__ and __`Post`__ with your own names.*
 
--[ ] Create __`blog_project`__ Django project
+-[X] Create __`blog_project`__ Django project
 -[ ] Create __`blog`__ app
 -[ ] Create __`Post`__ model
 	-[ ] title field
