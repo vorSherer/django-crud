@@ -19,7 +19,7 @@ NOTE: replace __`blog`__ and __`Post`__ with your own names.
 *NOTE: replace __`blog`__ and __`Post`__ with your own names.*
 
 -[X] Create __`blog_project`__ Django project
--[ ] Create __`blog`__ app
+-[X] Create __`blog`__ app
 -[ ] Create __`Post`__ model
 	-[ ] title field
 	-[ ] author field
