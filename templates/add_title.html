@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Add Title Page</title>
+{% endblock title %}
+
+{% block content %}
+<h1>New Title to add to the collection:</h1>
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{ form.as_p}}
+        <input type='submit' value="Add title">
+
+    </form>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Book Collection Home</title>
+{% endblock title %}
+
+{% block content %}
+    <h1>My Book Collection Home Page</h1>
+    <p>Books! I have too many books! Too many books and little time to read any of them.</p>
+    <p>On this site, I have included a few leisure titles (with their associated authors) that I can recommend for any Sci-Fi fan. I hope you find some titles you enjoy.</p>
+    <h2>Here is my existing collection:</h2>
+    <ul>
+        {% for book in object_list %}
+            <li>'{{ book.title }} by {{ book.authors }}'</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
