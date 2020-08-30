@@ -1,15 +1,26 @@
 from django.shortcuts import render
 from django.views.generic import (
-    TemplateView,
+    CreateView,
     ListView,
+    DetailView,
 )
 from .models import Book
 
 
-class HomePageView(TemplateView):
+class HomePageView(ListView):
     template_name = 'home.html'
-
-
-class BooksPageView(ListView):
-    template_name = 'collection.html'
     model = Book
+    paginate_by = 10
+
+
+class BookDetailPageView(DetailView):
+    template_name = 'book_detail.html'
+    model = Book
+
+
+class CreateBookPageView(CreateView):
+    template_name = 'add_title.html'
+    model = Book
+    fields = '__all__'
+
+

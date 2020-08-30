@@ -6,22 +6,22 @@
     {% block title %}
         <title>Tab Title</title>
     {% endblock title %}
-
+    <!-- {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> -->
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href=''>Home</a></li>
-                <li><a href='add'>Add</a></li>
-                <li><a href='collection'>Collection</a></li>
-            </ul>
-        </nav>
+        {% block sidebar %}
+        <ul class="sidebar-nav">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <!-- <li><a href="add">Add</a></li> -->
+        </ul>
+        {% endblock sidebar %}
     </header>
     <main>
-        {% block main1 %}
+        {% block content %}
             <h1>Page Banner</h1>
-        {% endblock main1 %}
+        {% endblock content %}
     </main>
 </body>
 </html>

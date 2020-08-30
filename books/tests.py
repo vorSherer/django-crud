@@ -1,8 +1,8 @@
-from django.test import SimpleTestCase
+from django.test import TestCase
 from django.urls import reverse
 
 
-class BooksTest(SimpleTestCase):
+class BooksTest(TestCase):
 
     # Helper functions *****************************
 
